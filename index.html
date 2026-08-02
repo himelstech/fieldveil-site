@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldVeil</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0b0d12;
+    --fg: #f2f2f5;
+    --muted: #9aa0ac;
+    --accent: #7dd3fc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at 30% 20%, #1a2436, var(--bg) 60%);
+    color: var(--fg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 20px 60px;
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    letter-spacing: 0.04em;
+    margin: 0 0 8px;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 480px;
+  }
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 28px 32px;
+    max-width: 560px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+  }
+  .card p {
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  a {
+    color: var(--accent);
+  }
+  footer {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1>FIELDVEIL</h1>
+  <p class="tagline">Transform the space around you. A free, ad-free visionOS app that turns your room into 28 living, breathing scenes.</p>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Having an issue or have feedback? Open an issue on <a href="https://github.com/himelstech/fieldveil-site/issues">GitHub</a> or reach out at <a href="mailto:mhimelst@gmail.com">mhimelst@gmail.com</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>FieldVeil collects no personal data, contains no ads, and no analytics. Hand and scene tracking happen entirely on-device via ARKit and never leave your headset.</p>
+  </div>
+
+  <footer>FieldVeil &middot; built by a solo developer</footer>
+</body>
+</html>
